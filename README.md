@@ -75,6 +75,6 @@ A formatted report email is sent automatically to the client or internal distrib
 ## About
 
 Built by **Charles Emmanuel** — AI & Automation Systems Engineer  
-Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation)  
+Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation) | charlestaylurr@gmail.com
 
 I build systems that remove repetitive work, improve operational speed, and help businesses scale with structure.
