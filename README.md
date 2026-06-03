@@ -1,64 +1,62 @@
 # Real Estate Investment Automation System
 
-**Industry:** Real Estate  
-**Stack:** n8n, AI Agent, REST APIs, Google Sheets, Slack, Gmail  
-**Demo video:** [Watch the full walkthrough](https://drive.google.com/file/d/11TgDuEtlnMu0DBSbk_kovLGjmxuKo37l/view)
+> AI-powered investment research pipeline that matches properties, runs financial analysis, generates reports, and notifies the team automatically using n8n, OpenAI, Google Sheets, Slack, and Gmail.
+
+**Industry:** Real Estate
+**Built for:** Investment firms and real estate teams that want to automate property research and deal reporting without losing hours to manual data gathering.
+
+---
+
+## Demo
+
+[Watch the full walkthrough →](https://drive.google.com/file/d/11TgDuEtlnMu0DBSbk_kovLGjmxuKo37l/view)
+
+<img width="852" height="405" alt="Github real" src="https://github.com/user-attachments/assets/508b3091-d416-4e8f-bcd4-a92203e1d6cb" />
+
 
 ---
 
 ## The Problem
 
-A client comes in looking for a property investment opportunity. The company does not already have it at hand. The team has to start working from scratch.
+A client comes in looking for a property investment opportunity. The team has to start from scratch every time.
 
 Searching through listings. Calling agents. Comparing multiple opportunities. Checking locations and pricing. Running ROI and cash flow calculations. Trying to organize everything into spreadsheets and reports before management can even review the deal.
 
-When multiple requests come in at the same time, the entire process becomes difficult to manage. Things get missed. Deals get delayed. Hours disappear into manual data gathering that should not require human attention.
+When multiple requests come in at the same time, the entire process breaks down. Things get missed. Deals get delayed. Hours disappear into manual data gathering that should not require human attention.
 
 ---
 
 ## The Solution
 
-I built a fully automated investment research and reporting pipeline inside n8n. The moment a client submits their investment requirements, the system takes over.
+A fully automated investment research and reporting pipeline built inside n8n. The moment a client submits their investment requirements, the system takes over.
 
-It matches properties based on the client's criteria, pulls live property data, runs financial analysis, generates a formatted investment report, updates the CRM, and sends instant notifications to the team on Slack. All without anyone touching a spreadsheet.
+It matches properties based on the client's criteria, pulls live listing data, runs financial analysis, generates a formatted investment report, updates the CRM, and sends instant notifications to the team on Slack and a report to the client via Gmail. All without anyone touching a spreadsheet.
 
 ---
 
 ## How It Works
 
-**Step 1 — Client submits investment requirements**  
-The workflow triggers the moment a client fills out the intake form. Name, budget, target location, property type, and investment goals are captured automatically.
-
-**Step 2 — AI Agent matches and researches properties**  
-An AI Agent processes the client's criteria and queries property listing APIs to find matching opportunities. It filters by location, price range, property type, and availability.
-
-**Step 3 — Financial analysis runs automatically**  
-For each matched property, the system calculates ROI, projected cash flow, yield estimates, and key financial metrics. No manual spreadsheet work required.
-
-**Step 4 — Investment report is generated**  
-A structured investment report is compiled for the matched properties, including all property details, listing links, agent contacts, and financial projections. Ready for management review.
-
-**Step 5 — CRM is updated**  
-All deal data, client requirements, matched properties, and generated reports are pushed into the Google Sheets CRM. Every request has a clean audit trail.
-
-**Step 6 — Team is notified on Slack**  
-An instant Slack notification goes to the relevant team channel with a summary of matched properties and a link to the full report.
-
-**Step 7 — Report delivered via Gmail**  
-A formatted report email is sent automatically to the client or internal distribution list.
+1. **Client submits investment requirements via intake form** — The workflow triggers the moment a client fills out the intake form. Name, budget, target location, property type, and investment goals are captured automatically and passed into the pipeline.
+2. **AI Agent matches and researches properties** — An n8n AI Agent powered by OpenAI processes the client's criteria and queries property listing APIs to find matching opportunities. It filters by location, price range, property type, and availability.
+3. **Financial analysis runs automatically** — For each matched property, the system calculates ROI, projected cash flow, yield estimates, and key financial metrics. No manual spreadsheet work required.
+4. **Investment report is generated** — A structured report is compiled for the matched properties, including all property details, listing links, agent contacts, and financial projections. Ready for management review.
+5. **CRM is updated** — All deal data, client requirements, matched properties, and generated reports are pushed into the Google Sheets CRM. Every request has a clean audit trail.
+6. **Team is notified on Slack** — An instant Slack notification goes to the relevant team channel with a summary of matched properties and a link to the full report.
+7. **Report delivered via Gmail** — A formatted report email is sent automatically to the client or internal distribution list.
 
 ---
 
-## Tools & Stack
+## Tech Stack
 
 | Tool | Role |
 |---|---|
-| **n8n** | Workflow orchestration and automation engine |
-| **AI Agent (OpenAI)** | Property matching logic and natural language processing |
-| **REST APIs** | Property listing data and external data sources |
-| **Google Sheets** | CRM — stores client requests, matched properties, and reports |
-| **Slack** | Real-time team notifications |
-| **Gmail** | Automated report delivery |
+| **n8n** | Core workflow engine and orchestration layer |
+| **n8n AI Agent Node** | Runs the LangChain-based agent logic for property matching and criteria processing |
+| **OpenAI API** | Powers the agent's natural language understanding and decision making |
+| **REST APIs** | Pulls live property listing data and external data sources |
+| **Google Sheets** | CRM that stores client requests, matched properties, and generated reports |
+| **Slack** | Real-time team notifications with deal summaries |
+| **Gmail** | Automated report delivery to clients and internal teams |
 
 ---
 
@@ -66,15 +64,15 @@ A formatted report email is sent automatically to the client or internal distrib
 
 - Eliminated hours of manual research per client request
 - Zero deals missed due to manual process gaps
-- Team shifted focus from data gathering to deal review
-- All client requests centralized in one trackable system
+- Team shifted focus from data gathering to deal review and closing
+- All client requests centralized in one trackable, searchable system
 - System runs 24/7 without supervision
 
 ---
 
 ## About
 
-Built by **Charles Emmanuel** — AI & Automation Systems Engineer  
+Built by **Charles Emmanuel** — AI & Automation Systems Engineer.  
 Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation) | charlestaylurr@gmail.com
 
-I build systems that remove repetitive work, improve operational speed, and help businesses scale with structure.
+I build systems that remove repetitive manual work so teams can focus on what actually matters. If your business is losing time or money to broken processes, reach out.
