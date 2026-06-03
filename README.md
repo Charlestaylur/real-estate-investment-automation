@@ -2,7 +2,7 @@
 
 > AI-powered investment research pipeline that matches properties, runs financial analysis, generates reports, and notifies the team automatically using n8n, OpenAI, Google Sheets, Slack, and Gmail.
 
-**Industry:** Real Estate
+**Industry:** Real Estate.  
 **Built for:** Investment firms and real estate teams that want to automate property research and deal reporting without losing hours to manual data gathering.
 
 ---
